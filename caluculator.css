@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hentaigana:wght@200..900&display=swap');
+
+/* Page background */
+body {
+    background-color: #f8d7da; /* Light red-pink */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centered text */
+.text-center {
+    text-align: center;
+    font-family: "Noto Serif Hentaigana", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Use a valid weight */
+    font-style: normal;
+    color: #333; /* Dark text for contrast */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Red background container */
+.bg-red {
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* Rounded corners */
+    animation: slideIn 1s ease-out;
+}
+
+/* Button styles */
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #dca5a4; /* Light red */
+    color: black;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #ff6666; /* Darker red on hover */
+    color: white;
+    animation: bounce 0.4s ease-in-out;
+}
+
+/* Row input styles */
+.row {
+    margin: 8px 0;
+}
+
+/* Input field styling */
+.row input {
+    font-size: 20px;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    max-width: 300px;
+    background-color: #fff3f3; /* Light pink */
+    color: black;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input field focus effect */
+.row input:focus {
+    border-color: #ff6666; /* Red border on focus */
+    box-shadow: 0px 0px 5px #ff6666;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
